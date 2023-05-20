@@ -17,11 +17,11 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require('./src/app.js');
-const createRole = require('./src/controllers/roleControllers');
-const { findTypesApi } = require('./src/controllers/typesControllers');
-const { findPokemonsApi } = require('./src/controllers/pokemonControllers');
-const { conn } = require('./src/db.js');
+const server = require('./app.js');
+const createRole = require('./controllers/roleControllers');
+const { findTypesApi } = require('./controllers/typesControllers');
+const { findPokemonsApi } = require('./controllers/pokemonControllers');
+const { conn } = require('./db.js');
 const PORT = 3001;
 
 
