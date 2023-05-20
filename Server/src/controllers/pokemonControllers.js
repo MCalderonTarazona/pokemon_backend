@@ -55,7 +55,6 @@ const  findPokemonsApi = async () => {
             for (const element of pokemonData) {
                 const { id, name, height, weight, sprites, stats, types } = element;
                 const typeNames = types.map((type) => type.type.name);
-
                 const pokemonDetails = {
                 id,
                 name,
@@ -66,7 +65,7 @@ const  findPokemonsApi = async () => {
                 speed: stats[5].base_stat,
                 height,
                 weight,
-                types: typeNames,
+                types: typeNames
                 };
 
                 pokemonsApi.push(pokemonDetails);
