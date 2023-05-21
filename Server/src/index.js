@@ -34,7 +34,6 @@ conn.sync({ force: true }).then(async () => {
     await findTypesApi();
     await findPokemonsApi();
 
-
     server.listen(PORT, () => {
       console.log('Server raised in port: ' + PORT);
     });
